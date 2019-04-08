@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/beet"
+    tools:context=".ProfileActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/set_profile_image"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="57dp"
+        android:src="@drawable/profileimg"
+        app:civ_border_color="#24D25E"
+        app:civ_border_width="2dp" />
+
+    <EditText
+        android:id="@+id/set_user_name"
+        android:layout_width="268dp"
+        android:layout_height="43dp"
+        android:layout_below="@+id/set_profile_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="59dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:layout_marginTop="55dp"
+        android:hint="Name"
+        android:inputType="textMultiLine" />
+
+    <EditText
+        android:id="@+id/set_status"
+        android:layout_width="268dp"
+        android:layout_height="43dp"
+        android:layout_below="@+id/set_user_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:hint="Status"
+        android:inputType="textMultiLine" />
+
+    <Button
+        android:id="@+id/updatebtn"
+        android:layout_width="328dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/set_status"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/update" />
+
+    <ProgressBar
+        android:id="@+id/pprogressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:translationZ="2dp"
+        android:visibility="gone" />
+
+</RelativeLayout>

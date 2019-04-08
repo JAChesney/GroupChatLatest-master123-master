@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConnectPageActivity"
+    android:background="@drawable/neet">
+
+    <AutoCompleteTextView
+        android:id="@+id/memgencode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter your code"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textAllCaps="true"
+        android:maxLength="5"
+        android:inputType="text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="300dp"
+        android:textAlignment="center"
+        android:textSize="50dp" />
+
+    <Button
+        android:id="@+id/signout"
+        android:layout_width="338dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/signout"
+        android:layout_below="@+id/crejump"
+        android:elevation="3dp"/>
+
+    <Button
+        android:id="@+id/connect"
+        android:layout_width="338dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/memgencode"
+        android:background="@drawable/connect"
+        android:elevation="3dp"/>
+
+    <Button
+        android:id="@+id/crejump"
+        android:layout_width="338dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/connect"
+        android:background="@drawable/createnew"
+        android:elevation="3dp" />
+
+</RelativeLayout>

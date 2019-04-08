@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="3dp"
+    app:cardCornerRadius="3dp"
+    app:contentPadding="5dp"
+    app:cardUseCompatPadding="true">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal">
+
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Group Name"
+      android:id="@+id/t1"
+      android:textColor="#000"
+      android:textSize="17sp"
+      android:layout_centerVertical="true"/>
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="New Group Name"
+      android:id="@+id/t2"
+      android:textColor="#000"
+      android:textSize="17sp"
+      android:layout_centerVertical="true"
+      android:paddingLeft="20dp"
+      android:layout_toRightOf="@+id/t1"
+      />
+    <LinearLayout
+        android:id="@+id/accthis"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginStart="25dp">
+
+        <ImageView
+            android:id="@+id/acccall"
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/tick" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/delthis"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/delcall"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:src="@drawable/delete" />
+
+    </LinearLayout>
+
+  </LinearLayout>
+
+</android.support.v7.widget.CardView>

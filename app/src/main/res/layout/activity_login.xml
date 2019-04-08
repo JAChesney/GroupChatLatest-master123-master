@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="@drawable/neet">
+
+    <AutoCompleteTextView
+        android:id="@+id/phoneauth"
+        android:layout_width="338dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="300dp"
+        android:hint="Enter your phone number"
+        android:textColorHint="@color/white"
+        android:inputType="phone"
+        android:maxLength="10"
+        android:elevation="3dp"/>
+
+    <LinearLayout
+        android:id="@+id/dhaalayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login"
+        android:layout_centerHorizontal="true">
+0        <TextView
+            android:id="@+id/dhaa1"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginTop="5dp"
+            android:textSize="19dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Don't have an accounct? " />
+
+        <TextView
+            android:id="@+id/dhaa2"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:textColor="#421992"
+            android:textSize="19dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Click here to sign up"
+            android:layout_marginTop="5dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/aa"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:textColor="@color/white"
+        android:textSize="19dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Admin login"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/dhaalayout"
+        android:layout_marginTop="30dp"
+        android:elevation="3dp" />
+
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="338dp"
+        android:layout_height="35dp"
+        android:background="@drawable/login"
+        android:padding="5dp"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/phoneauth"/>
+
+    <ProgressBar
+        android:id="@+id/lprogressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

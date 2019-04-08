@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity"
+    android:background="@drawable/neet">
+
+    <Button
+        android:id="@+id/signbutton"
+        android:layout_width="338dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/phoneno"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/signup"
+        android:elevation="3dp"/>
+
+    <LinearLayout
+        android:id="@+id/dhaalayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signbutton"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/ahaa1"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginTop="5dp"
+            android:textSize="19dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Already have an account? " />
+
+        <TextView
+            android:id="@+id/ahaa2"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:textColor="#421992"
+            android:textSize="19dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Click here to log in"
+            android:layout_marginTop="5dp" />
+
+    </LinearLayout>
+
+    <AutoCompleteTextView
+        android:id="@+id/fname"
+        android:layout_width="338dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="285dp"
+        android:inputType="text"
+        android:hint="First Name"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:maxLength="30"
+        android:layout_centerHorizontal="true"/>
+
+    <AutoCompleteTextView
+        android:id="@+id/lname"
+        android:layout_width="338dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="15dp"
+        android:inputType="text"
+        android:hint="Last Name"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:layout_below="@+id/fname"
+        android:maxLength="30"
+        android:layout_centerHorizontal="true"/>
+
+    <AutoCompleteTextView
+        android:id="@+id/signemail"
+        android:layout_width="338dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="15dp"
+        android:inputType="text"
+        android:hint="E-mail"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:layout_below="@+id/lname"
+        android:maxLength="30"
+        android:layout_centerHorizontal="true"/>
+
+    <AutoCompleteTextView
+        android:id="@+id/phoneno"
+        android:layout_width="338dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="15dp"
+        android:inputType="phone"
+        android:hint="Phone Number"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:layout_below="@+id/signemail"
+        android:maxLength="30"
+        android:layout_centerHorizontal="true"/>
+
+    <ProgressBar
+
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone" />
+
+</RelativeLayout>
